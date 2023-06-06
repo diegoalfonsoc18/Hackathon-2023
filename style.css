@@ -102,8 +102,8 @@ header {
   /* background-color: var(--bkg);
   box-shadow: 7px 7px 15px rgba(0, 0, 0, 25%);
   border-radius: 20px;
-  padding: 8px 100px; */
-}
+  padding: 8px 100px;
+} */
 .icon {
   display: flex;
   width: 100%;
@@ -136,6 +136,9 @@ header {
 .news p {
   width: 100%;
 }
+
+.form {}
+
 @media (min-width: 768px) {
   .wrapper-header {
     display: flex;
