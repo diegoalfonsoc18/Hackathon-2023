@@ -36,3 +36,9 @@ header {
 .menu {
   display: none;
 }
+.inactive {
+  display: none;
+}
+.menu-hamburger ul {
+  list-style-type: none;
+}
