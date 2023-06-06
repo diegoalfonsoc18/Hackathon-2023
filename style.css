@@ -86,6 +86,7 @@ header {
 }
 
 .news {
+  margin: 20px 0;
   width: 100%;
   height: auto;
   display: flex;
@@ -97,10 +98,10 @@ header {
   flex-direction: column;
   align-items: center;
   max-width: 80%;
-  background-color: var(--bkg);
+  /* background-color: var(--bkg);
   box-shadow: 7px 7px 15px rgba(0, 0, 0, 25%);
   border-radius: 20px;
-  padding: 8px 100px;
+  padding: 8px 100px; */
 }
 
 .news h1 {
@@ -108,9 +109,18 @@ header {
 }
 
 .news img {
-  width: 200px;
+  width: 300px;
+}
+.news h3 {
+  width: 14em;
 }
 
+.container-text {
+  width: 18em;
+}
+.news p {
+  width: 100%;
+}
 @media (min-width: 768px) {
   .menu-hamburger {
     display: none;
@@ -122,8 +132,6 @@ header {
     max-width: 50%;
   }
   .container-news {
-    display: flex;
-    flex-direction: row;
     align-items: center;
     max-width: 80%;
   }
