@@ -4,7 +4,7 @@
   padding: 0;
 }
 :root {
-  --dark: #121939;
+  --dark: rgba(0, 0, 0, 0.9);
   --bkg: #fbfbfb;
   --yellow: #c7d219;
   --black: #000000;
@@ -14,12 +14,14 @@
   --lg: 18px;
   --bg: 25px;
 }
-
+body {
+  font-family: "Montserrat", sans-ser;
+}
 header {
   display: flex;
-  background: rgba(0, 0, 0, 0.9);
+  background: var(--dark);
   width: 100%;
-  height: 100px;
+  height: 80px;
   justify-content: center;
 }
 .wrapper-header {
@@ -29,16 +31,53 @@ header {
   align-items: center;
 }
 .logo img {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 40px;
 }
 
 .menu {
   display: none;
 }
+
+.icon-hamburger {
+  width: 40px;
+  height: 40px;
+}
+
 .inactive {
   display: none;
 }
-.menu-hamburger ul {
+.menu-hamburger {
+  position: absolute;
+  right: 20px;
+  width: auto;
+  margin-top: 80px;
+  z-index: 1;
+  color: var(--dark);
+}
+
+.listMobileMenu {
+  display: flex;
+  flex-direction: column;
+}
+.menu-hamburger a {
+  text-decoration: none;
+  color: var(--dark);
   list-style-type: none;
+  font-weight: 500;
+}
+
+.menu-hamburger a:hover {
+  color: var(--yellow);
+}
+
+@media (min-width: 768px) {
+  .logo img {
+    width: 0px;
+    height: 50px;
+  }
+
+  .menu-hamburger {
+    display: none;
+  }
 }
