@@ -72,11 +72,6 @@ header {
 }
 
 @media (min-width: 768px) {
-  .logo img {
-    width: 0px;
-    height: 50px;
-  }
-
   .menu-hamburger {
     display: none;
   }
