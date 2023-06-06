@@ -62,7 +62,7 @@ header {
 }
 .menu-hamburger a {
   text-decoration: none;
-  color: var(--dark);
+  color: var(--bkg);
   list-style-type: none;
   font-weight: 500;
 }
@@ -71,8 +71,28 @@ header {
   color: var(--yellow);
 }
 
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  background-image: url(./img/bannerMobile.png);
+  background-size: cover;
+  background-position: center;
+}
+.banner img {
+  max-width: 70%;
+}
+
 @media (min-width: 768px) {
   .menu-hamburger {
     display: none;
   }
+  .banner img {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 1440px) {
 }
