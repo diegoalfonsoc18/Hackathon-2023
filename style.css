@@ -9,7 +9,7 @@
   --yellow: #c7d219;
   --black: #000000;
   --gray: #f4f0f0;
-  --sm: 14px;
+  --sm: 8px;
   --md: 16px;
   --lg: 18px;
   --bg: 25px;
@@ -85,14 +85,52 @@ header {
   max-width: 70%;
 }
 
+.news {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.container-news {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 80%;
+  background-color: var(--bkg);
+  box-shadow: 7px 7px 15px rgba(0, 0, 0, 25%);
+  border-radius: 20px;
+  padding: 8px 100px;
+}
+
+.news h1 {
+  font-family: var(--sm);
+}
+
+.news img {
+  width: 200px;
+}
+
 @media (min-width: 768px) {
   .menu-hamburger {
     display: none;
   }
+  .banner {
+    width: auto;
+  }
   .banner img {
+    max-width: 50%;
+  }
+  .container-news {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     max-width: 80%;
   }
 }
 
 @media (min-width: 1440px) {
+  .banner img {
+    max-width: 50%;
+  }
 }
