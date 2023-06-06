@@ -91,13 +91,14 @@ header {
   height: auto;
   display: flex;
   justify-content: center;
+  padding: 20px 0;
 }
 
 .container-news {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 80%;
+  width: 90%;
   /* background-color: var(--bkg);
   box-shadow: 7px 7px 15px rgba(0, 0, 0, 25%);
   border-radius: 20px;
@@ -112,14 +113,17 @@ header {
   width: 300px;
 }
 .news h3 {
-  width: 14em;
+  display: flex;
+  justify-content: center;
+  width: 80%;
 }
 
 .container-text {
-  width: 18em;
+  padding: 20px 0;
+  width: 100%;
 }
 .news p {
-  width: 100%;
+  width: auto;
 }
 @media (min-width: 768px) {
   .menu-hamburger {
@@ -131,14 +135,30 @@ header {
   .banner img {
     max-width: 50%;
   }
+  .container-text {
+    width: 80%;
+  }
+
+  .news {
+    width: 100%;
+  }
   .container-news {
     align-items: center;
-    max-width: 80%;
+    max-width: 900px;
+  }
+  .news img {
+    width: 350px;
   }
 }
 
 @media (min-width: 1440px) {
   .banner img {
     max-width: 50%;
+  }
+  .news img {
+    width: 400px;
+  }
+  .container-text {
+    width: 90%;
   }
 }
