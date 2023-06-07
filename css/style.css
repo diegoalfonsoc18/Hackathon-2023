@@ -10,7 +10,7 @@
   --black: #000000;
   --gray: #f4f0f0;
   --sm: 8px;
-  --md: 16px;
+  --md: 14px;
   --lg: 18px;
   --bg: 30px;
 }
@@ -86,8 +86,6 @@ header {
 }
 
 .container-title {
-  width: 100%;
-  height: auto;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -128,7 +126,7 @@ header {
   width: 90%;
   box-shadow: 7px 7px 15px rgba(0, 0, 0, 25%);
   border-radius: 20px;
-  padding: 8px 8px;
+  padding: 12px;
   margin: 20px 0;
 }
 
@@ -141,7 +139,7 @@ header {
 }
 
 .icons-information {
-  width: 40px;
+  width: fit-content;
   height: 40px;
   padding: 5px 0;
 }
@@ -156,11 +154,26 @@ header {
   padding: 7px 0;
   width: 100%;
 }
+
+.container-text h4 {
+  font-size: 12px;
+}
+
+.container-text ul {
+  list-style-type: none;
+  margin-bottom: var(--sm);
+}
+.container-text li {
+  text-align: center;
+  font-size: 10px;
+}
 .news p {
   width: 100%;
+  font-size: medium;
 }
 .news h3 {
   display: flex;
+  text-align: center;
 }
 .list-awards {
   width: 100%;
