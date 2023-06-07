@@ -202,6 +202,7 @@ header {
 .form {
   display: flex;
   flex-direction: column;
+  align-items: center;
   text-align: center;
   box-shadow: 7px 7px 15px rgba(0, 0, 0, 25%);
   border-radius: 20px;
@@ -215,6 +216,7 @@ header {
   align-items: center;
   transition: max-height 0.5s;
   overflow: hidden;
+  width: 80%;
 }
 .input-field input {
   width: 100%;
