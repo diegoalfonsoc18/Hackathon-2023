@@ -31,7 +31,7 @@ header {
   align-items: center;
 }
 .logo img {
-  width: 80px;
+  width: 90px;
   height: 40px;
 }
 
@@ -185,6 +185,7 @@ header {
   display: flex;
   justify-content: center;
   width: 100%;
+  margin-top: 15px;
 }
 
 /* .title h2::after {
@@ -220,6 +221,7 @@ header {
   transition: max-height 0.5s;
   overflow: hidden;
   width: 80%;
+  border-radius: 10px;
 }
 .input-field input {
   width: 100%;
@@ -255,6 +257,7 @@ footer {
 .contact-info {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding-top: 10px;
 }
@@ -321,6 +324,9 @@ hr {
 }
 
 @media (min-width: 768px) {
+  .banner {
+    height: 300px;
+  }
   .wrapper-header {
     display: flex;
     justify-content: space-between;
@@ -385,6 +391,7 @@ hr {
 
   hr {
     display: none;
+    transform: rotate(90deg);
   }
 
   .contact-info {
@@ -407,6 +414,9 @@ hr {
 }
 
 @media (min-width: 1440px) {
+  .banner {
+    height: 400px;
+  }
   .banner img {
     max-width: 50%;
   }
