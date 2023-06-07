@@ -115,6 +115,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: auto;
   width: 90%;
   box-shadow: 7px 7px 15px rgba(0, 0, 0, 25%);
   border-radius: 20px;
@@ -138,12 +139,30 @@ header {
   font-family: var(--sm);
 }
 
-.banner-dev .container-text {
+.container-text {
   padding: 5px 0;
   width: 100%;
 }
 .news p {
   width: 100%;
+}
+
+.container-figure {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+.container-img {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+
+.figure-dev {
+  width: fit-content;
+  height: auto;
 }
 
 @media (min-width: 768px) {
@@ -197,6 +216,10 @@ header {
   .icons img {
     width: 40px;
     height: 40px;
+  }
+
+  .wrapper-information {
+    display: flex;
   }
 }
 
