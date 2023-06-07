@@ -29,10 +29,11 @@ const sendInfo = (nombre, mail, telefono, pais) => {
     return;
   }
 
-  console.log(nombre);
-  console.log(mail);
-  console.log(telefono);
-  console.log(pais);
-
-  alert("Datos enviados");
+  alert(`
+    Datos enviados exitosamente:
+    Nombre: ${nombre}
+    Mail: ${mail}
+    Telefono: ${telefono}
+    Pais: ${pais}
+  `);
 };
