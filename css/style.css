@@ -323,6 +323,29 @@ hr {
   background-color: var(--yellow);
 }
 
+.sponsors {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 40px;
+  height: auto;
+}
+
+.wrapper-sponsors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+.container-sponsors {
+  padding: 5px 10px;
+  width: 150px;
+}
+.container-sponsors img {
+  width: 100%;
+  height: 100%;
+}
 @media (min-width: 768px) {
   .banner {
     height: 300px;
