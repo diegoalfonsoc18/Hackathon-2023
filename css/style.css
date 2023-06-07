@@ -87,6 +87,7 @@ header {
 
 .container-title {
   width: 100%;
+  height: 30px;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -233,19 +234,21 @@ header {
 
 footer {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
+  align-content: center;
   width: 100%;
-  height: 200px;
+  height: auto;
   background-color: var(--dark);
   margin: 20px;
 }
 .wrapper-footer {
   display: flex;
   flex-direction: column;
-  align-content: center;
-  justify-items: center;
-  width: 100%;
-  height: auto;
+  /* align-content: center; */
+  /* justify-items: center; */
+  width: 90%;
+  height: 100%;
   padding: 10px 0;
 }
 
@@ -275,6 +278,48 @@ footer {
   width: 100%;
   height: 100%;
 }
+
+.servicios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.servicios h4 {
+  margin-top: 10px;
+  color: var(--bkg);
+}
+.servicios a {
+  margin-top: 10px;
+  color: var(--bkg);
+}
+.conocenos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 10px;
+}
+.conocenos h4 {
+  margin-top: 10px;
+  color: var(--bkg);
+}
+
+.conocenos a {
+  margin-top: 10px;
+  color: var(--bkg);
+}
+
+hr {
+  margin-top: 10px;
+  width: 100%;
+  border: none;
+  height: 2px;
+  background-color: var(--yellow);
+}
+
 @media (min-width: 768px) {
   .wrapper-header {
     display: flex;
