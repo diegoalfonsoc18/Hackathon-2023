@@ -87,29 +87,37 @@ header {
 
 .container-title {
   width: 100%;
-  height: 30px;
+  height: auto;
   margin: 0;
   display: flex;
   flex-direction: column;
   justify-items: center;
   align-items: center;
-  padding: 10px 0;
+  margin: 20px 0;
 }
 
 .title {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 90%;
+  justify-content: center;
+  width: 80%;
+  height: 100px;
+}
+.information {
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+.wrapper-information {
+  margin: 20px 0;
 }
 
 .news {
-  margin: 20px 0;
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
-  padding: 20px 0;
 }
 
 .container-news {
@@ -121,6 +129,7 @@ header {
   box-shadow: 7px 7px 15px rgba(0, 0, 0, 25%);
   border-radius: 20px;
   padding: 8px 8px;
+  margin: 20px 0;
 }
 
 .icon {
@@ -187,18 +196,6 @@ header {
   width: 100%;
   margin-top: 15px;
 }
-
-/* .title h2::after {
-  content: "";
-  width: 30px;
-  height: 4px;
-  border-radius: 3px;
-  background: var(--yellow);
-  position: absolute;
-  bottom: -12px;
-  left: 50%;
-  transform: translateX(-50%);
-} */
 
 .container-form {
   width: 80%;
@@ -419,6 +416,8 @@ hr {
 
   .contact-info {
     grid-area: contact-info;
+    border-left: 2px solid var(--yellow);
+    border-right: 2px solid var(--yellow);
   }
   .servicios {
     grid-area: servicios;
@@ -433,6 +432,7 @@ hr {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "servicios  contact-info conocenos";
     grid-gap: 10px;
+    padding: 25px 0;
   }
 }
 
