@@ -119,7 +119,7 @@ header {
   width: 90%;
   box-shadow: 7px 7px 15px rgba(0, 0, 0, 25%);
   border-radius: 20px;
-  padding: 8px 16px;
+  padding: 8px 8px;
 }
 
 .icon {
@@ -140,11 +140,21 @@ header {
 }
 
 .container-text {
-  padding: 5px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 7px 0;
   width: 100%;
 }
 .news p {
   width: 100%;
+}
+
+.list-awards {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container-figure {
@@ -168,7 +178,54 @@ header {
   width: 100%;
   height: 100%;
 }
+.wrapper-form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 
+/* .title h2::after {
+  content: "";
+  width: 30px;
+  height: 4px;
+  border-radius: 3px;
+  background: var(--yellow);
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+} */
+
+.container-form {
+  width: 80%;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: 7px 7px 15px rgba(0, 0, 0, 25%);
+  border-radius: 20px;
+  padding: 8px 8px;
+}
+
+.input-field {
+  border: solid 1px rgba(0, 0, 0, 25%);
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  transition: max-height 0.5s;
+  overflow: hidden;
+}
+.input-field input {
+  width: 100%;
+  border: 0;
+  outline: none;
+  padding: 18px 15px;
+}
+
+.input-field i {
+  margin-left: 15px;
+}
 @media (min-width: 768px) {
   .wrapper-header {
     display: flex;
