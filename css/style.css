@@ -382,6 +382,28 @@ hr {
   .container-img {
     width: 24rem;
   }
+
+  hr {
+    display: none;
+  }
+
+  .contact-info {
+    grid-area: contact-info;
+  }
+  .servicios {
+    grid-area: servicios;
+  }
+
+  .conocenos {
+    grid-area: conocenos;
+  }
+
+  .wrapper-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "servicios  contact-info conocenos";
+    grid-gap: 10px;
+  }
 }
 
 @media (min-width: 1440px) {
